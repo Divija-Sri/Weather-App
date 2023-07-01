@@ -1,0 +1,225 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background:#222;
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.QH3EWMLBzK35saYj_ERzeAHaEE&pid=Api&P=0&h=180');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card{
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 35%;
+  height: 42%;
+  max-height: 420px;
+  max-width: 420px;
+  margin:3em; 
+}
+img {
+  height: auto;  
+  display:block;
+  margin-left: 9cm;
+  margin-right: auto;
+  border-radius: 50%;
+}
+.description
+{
+  color:rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+  margin-right:3cm;
+  margin-top: -0.4cm;
+  text-align: right;
+  font-size: 27px;
+}
+.city{
+  color:#6495ED;
+  font-family: "Sofia", sans-serif;
+  margin-top: 0.3em;
+  margin-left:-1cm;
+  font-size: 40px;
+  text-align:center;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  margin: 1em;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover{
+  background: rgba(0, 0, 0,0.5);
+}
+input.search-bar
+{
+  outline: none;
+  padding:0.5em 1em;
+  border-radius: 18px;
+  background: #7c7c7c2b;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 120%;
+  width: calc(100%-100px);
+}
+.temp{
+  font-family: Arial, sans-serif;
+  margin:0;
+  margin-top :-0.5em;
+  margin-bottom: 0.2em;
+  text-align:center;
+}
+.Date
+{
+
+  color:rgb(255, 238, 211);
+  margin-left: 1.5cm;
+  margin-top: -12cm;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.humidity
+{
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+.time
+{
+  color:rgb(255, 238, 211);
+  margin-left: 1.5cm;
+  margin-left: 3cm;
+  margin-top: -2cm;
+  font-size: 30px;
+  font-weight:bold;
+  
+}
+@media screen and (max-width:730px){
+  body
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .city{
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
+    text-align:center;
+  }
+  .card{
+    padding: 5em;
+    border-radius: 30px;
+    width: 50%;
+    height: 37%;
+    max-height: 800px;
+    max-width: 800px;
+    margin:3em; 
+  }
+  img 
+  {
+    display: block;
+    margin-left: 0.9cm;
+    margin-right: auto;
+    margin-bottom: 1;
+  }
+  .description
+  {
+    text-transform: capitalize;
+    margin-right:-1.7cm;
+    margin-top: -0.9cm;
+    font-size: 20px;
+  }
+  .search
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1cm;
+    
+  }
+  
+  button{
+    margin: 1em;
+    border-radius: 55%;
+    border: none;
+    height: 35px;
+    width: 35px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  button:hover{
+    background: rgba(0, 0, 0,0.5);
+  }
+  input.search-bar
+  {
+    outline: none;
+    padding:0.3em 0.3em;
+    border-radius: 18 px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+    width: calc(100%-100px);
+  }
+  .temp{
+    margin:0;
+    margin-top :-0.5em;
+    margin-bottom: 0.2em;
+    text-align:center;
+  }
+  .humidity
+  {
+    margin-top: 2em;
+    margin-right:1em;
+  }
+  .wind
+  {
+    margin-right:1em;
+  }
+  .time
+  {
+    margin-left: 0.3cm;
+    margin-top: -1.5cm;
+    font-size: 25px;
+  }
+  .Date
+  {
+    margin-left: -0.8cm;
+    margin-top: -9.5cm;
+    font-size: 17px;
+  }
+  .weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    margin-right: -10cm;
+    position: relative;
+  }
+  .weather.loading:after{
+    visibility: visible;
+    margin-top: -5cm;
+    margin-left: 3.6cm;
+    font-size: 25px;
+    content:"Loading...";
+    color: white;
+    position: absolute;
+  }
+}
